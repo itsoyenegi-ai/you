@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flowers for You</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #fff0f5;
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive;
+      overflow: hidden;
+    }
+
+    .flowers {
+      font-size: 50px;
+      margin-top: 50px;
+      animation: float 3s infinite alternate;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0px); }
+      to { transform: translateY(15px); }
+    }
+
+    .envelope {
+      margin-top: 60px;
+      font-size: 60px;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .open {
+      font-size: 20px;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flowers">
+    🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 💜
+    <br>
+    Daisy • Tulip • Lavender
+  </div>
+
+  <a href="letter.html">
+    <div class="envelope">
+      ✉️
+      <div class="open">OPEN</div>
+    </div>
+  </a>
+
+</body>
+</html>
