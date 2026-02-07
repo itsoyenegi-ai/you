@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flower Page 🌸</title>
+<title>For My Bubble 🌸</title>
 
 <style>
 body {
@@ -12,7 +12,7 @@ body {
     font-family: 'Segoe UI', cursive;
     background: linear-gradient(to bottom right, #ffe6f2, #f3e8ff);
     text-align: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Floating animation */
@@ -29,47 +29,56 @@ body {
     animation: float 4s ease-in-out infinite;
 }
 
-/* Love doodles styling */
+/* Love doodles */
 .doodles {
     font-size: 30px;
-    margin-top: 25px;
+    margin-top: 20px;
     animation: float 3s ease-in-out infinite;
 }
 
-/* Floating scattered doodles */
-.floating {
-    position: absolute;
-    font-size: 24px;
-    animation: float 5s ease-in-out infinite;
-    opacity: 0.8;
+/* Envelope */
+.envelope {
+    font-size: 75px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.envelope:hover {
+    transform: scale(1.2);
+}
+
+.open-text {
+    font-size: 20px;
+    color: #ff4d88;
+    font-weight: bold;
+    margin-top: 5px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- Main Flower Area -->
 <div class="flower-container">
     🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 💜 <br>
-    🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 💜 <br>
-    🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 💜 <br>
+    🌷 🌼 💜 🌷 🌼 💜 🌷 🌼 💜 🌷 🌼 💜 <br>
+    💜 🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 <br>
     🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 💜 🌼 🌷 💜
 </div>
 
-<!-- Center Love Doodles -->
 <div class="doodles">
-    💕 ✨ 🦋 💖 🌸 💞 ✨ 💗 🦋 💕
+    💕 ✨ 🦋 💖 🌸 💕 ✨ 🦋 💖 🌸 <br>
+    💞 💘 🌹 💞 💘 🌹 💞 💘 🌹
 </div>
 
-<!-- Scattered Love Doodles -->
-<div class="floating" style="top:10%; left:5%;">💖</div>
-<div class="floating" style="top:20%; right:10%;">💕</div>
-<div class="floating" style="bottom:15%; left:15%;">💞</div>
-<div class="floating" style="bottom:25%; right:8%;">💗</div>
-<div class="floating" style="top:50%; left:2%;">✨</div>
-<div class="floating" style="top:60%; right:5%;">🦋</div>
-<div class="floating" style="bottom:5%; left:40%;">🌸</div>
-<div class="floating" style="top:35%; right:35%;">💘</div>
+<div class="envelope" onclick="goToLetter()">✉️</div>
+<div class="open-text">OPEN</div>
+
+<script>
+function goToLetter() {
+    window.location.href = "letter.html";  // change file name if needed
+}
+</script>
 
 </body>
 </html>
