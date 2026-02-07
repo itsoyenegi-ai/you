@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For My Bubble</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      color: white;
+      font-size: 28px;
+    }
+
+    .heart {
+      margin-top: 20px;
+      font-size: 40px;
+      cursor: pointer;
+      animation: beat 1s infinite;
+      color: red;
+    }
+
+    @keyframes beat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <h1>Hey my Bubble, I have something for you 💖</h1>
+    <a href="flowers.html">
+      <div class="heart">❤️<br>Click Me</div>
+    </a>
+  </div>
+
+</body>
+</html>
